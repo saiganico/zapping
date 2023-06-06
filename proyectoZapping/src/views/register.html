@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script defer src="js/register.js"></script>
+</head>
+
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Registro</h1>
+        <form id="login-form">
+            <input type="text" name="username" id="name-field" class="login-form-field" placeholder="Nombre de Usuario">
+            <input type="email" name="email" id="username-field" class="login-form-field" placeholder="e-mail">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Contraseña">
+            <input type="password" name="checkPassword" id="password-check-field" class="login-form-field" placeholder="Repetir Contraseña">
+            <input type="submit" value="Registrar" id="login-form-submit">
+        </form>
+        <div>
+            <a href="/login" id="login-header">¿Tienes cuenta? Ingresa</a>
+        </div>
+        <div id="password-error-msg-holder">
+            <p id="password-error-msg">Error: La contraseña debe tener al menos 6 caracteres y deben coincidir</p>
+        </div>
+
+        <div id="email-error-msg-holder">
+            <p id="email-error-msg">Error: El e-mail no es válido</p>
+        </div>
+        
+        <div id="username-error-msg-holder">
+            <p id="username-error-msg">Error: Usuario debe tener al menos 2 caracteres</p>
+        </div>         
+
+
+    </main>
+</body>
+
+</html>

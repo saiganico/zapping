@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script defer src="js/login.js"></script>
+</head>
+
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+
+        <form id="login-form">
+            <input type="email" name="email" id="email-field" class="email-form-field" placeholder="e-mail">
+            <input type="password" name="password" id="password-field" class="login-form-field"
+                placeholder="Contraseña">
+            <input type="submit" value="Login" id="login-form-submit">
+        </form>
+        <div>
+            <a href="/register" id="login-header">¿No tienes cuenta? Regístrate</a>
+        </div>
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg">e-mail inválido <span id="error-msg-second-line">y/o contraseña</span></p>
+        </div>
+        <div id="password-error-msg-holder">
+            <p id="password-error-msg">Error: La contraseña debe tener al menos 6 caracteres</p>
+        </div>
+
+        <div id="email-error-msg-holder">
+            <p id="email-error-msg">Error: El e-mail no es válido</p>
+        </div>
+
+    </main>
+</body>
+
+</html>
